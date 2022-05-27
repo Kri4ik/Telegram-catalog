@@ -1,0 +1,12 @@
+.site {
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteBody {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto auto;
+    height: auto;
+}
+
