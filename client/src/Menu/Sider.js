@@ -5,7 +5,8 @@ import {
     PieChartOutlined,
     DesktopOutlined,
     MailOutlined,
-    MenuUnfoldOutlined
+    MenuUnfoldOutlined,
+    UserOutlined
   } from '@ant-design/icons';
   import { Button, Menu } from 'antd';
   import { useState } from 'react';
@@ -21,20 +22,25 @@ import {
   }
   
   const items = [
-    getItem('Option 1', '1', <PieChartOutlined />),
-    getItem('Option 2', '2', <DesktopOutlined />),
-    getItem('Option 3', '3', <ContainerOutlined />),
-    getItem('Navigation One', 'sub1', <MailOutlined />, [
-      getItem('Option 5', '5'),
-      getItem('Option 6', '6'),
-      getItem('Option 7', '7'),
-      getItem('Option 8', '8'),
+    getItem('Авторизація', '1', <PieChartOutlined />),
+    getItem('Контакти', '2', <DesktopOutlined />),
+    getItem('Категорії', '3', <ContainerOutlined />),
+    getItem('Користувач', 'sub1', <UserOutlined />, [
+        // getItem('Tom', '3'),
+        // getItem('Bill', '4'),
+        // getItem('Alex', '5'),
+      ]),
+    getItem('Навігація', 'sub1', <MailOutlined />, [
+      getItem('Головна', '5'),
+      getItem('Про сайт', '6'),
+      getItem('API', '7'),
+    //   getItem('Option 8', '8'),
     ]),
-    getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
-      getItem('Option 9', '9'),
-      getItem('Option 10', '10'),
-      getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
-    ]),
+    // getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
+    //     getItem('Option 9', '9'),
+    //     getItem('Option 10', '10'),
+    //     getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
+    //   ]),
   ];
   
   const App = () => {
@@ -48,7 +54,7 @@ import {
       <div
         style={{
           width: 256,
-          marginRight:"10px",
+          marginRight:"20px",
         }}
       >
         <Button

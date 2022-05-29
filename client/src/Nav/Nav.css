@@ -1,5 +1,5 @@
 /* HEADER -------------------------------------------------------------------------*/
-*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+*{text-decoration:none; list-style:none;outline:none;}
 
 nav{width:auto; float:right;}
 nav ul{display:table; float:right;}
@@ -53,6 +53,4 @@ nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
     @media only screen and (max-width: 320px) {
     h1 {padding: 20px 0px;}
     }
-    .icon-phone:before {
-        content: url("./github-logo.png");
-    }
+    

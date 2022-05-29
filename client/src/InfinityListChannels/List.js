@@ -58,7 +58,7 @@ const App = () => {
         >
 
         <List
-        grid={{column:4, gutter:150}}
+        grid={{column:4, gutter:130}}
         itemLayout= "vertical"
           dataSource={data}
           renderItem={(item) => (

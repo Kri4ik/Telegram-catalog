@@ -14,14 +14,14 @@ class App extends React.Component{
 
   render(){
     return(
-      <div className="site">
-
-        {/* <Layout/> */}
-        <Sider/>
-        <div className="siteBody">
-          <Header/>
-          <InfinityListChannels/>
-          <Footer/>
+      <div className="body">
+        <div className="site">
+            <Header/>
+          <div className="siteBody">
+            <Sider/>
+            <InfinityListChannels/>
+          </div>
+            <Footer/>
         </div>
       </div>
     );
